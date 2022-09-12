@@ -10,7 +10,7 @@
 		AA87ABE728CEF75D00F0948A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA87ABE628CEF75D00F0948A /* AppDelegate.swift */; };
 		AA87ABE928CEF75D00F0948A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA87ABE828CEF75D00F0948A /* SceneDelegate.swift */; };
 		AA87ABEB28CEF75D00F0948A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA87ABEA28CEF75D00F0948A /* ViewController.swift */; };
-		AA87ABEE28CEF75D00F0948A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA87ABEC28CEF75D00F0948A /* Main.storyboard */; };
+		AA87ABEE28CEF75D00F0948A /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA87ABEC28CEF75D00F0948A /* OnBoarding.storyboard */; };
 		AA87ABF128CEF75D00F0948A /* xbike_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA87ABEF28CEF75D00F0948A /* xbike_demo.xcdatamodeld */; };
 		AA87ABF328CEF76000F0948A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA87ABF228CEF76000F0948A /* Assets.xcassets */; };
 		AA87ABF628CEF76000F0948A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA87ABF428CEF76000F0948A /* LaunchScreen.storyboard */; };
@@ -41,7 +41,7 @@
 		AA87ABE628CEF75D00F0948A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA87ABE828CEF75D00F0948A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA87ABEA28CEF75D00F0948A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA87ABED28CEF75D00F0948A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA87ABED28CEF75D00F0948A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OnBoarding.storyboard; sourceTree = "<group>"; };
 		AA87ABF028CEF75D00F0948A /* xbike_demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = xbike_demo.xcdatamodel; sourceTree = "<group>"; };
 		AA87ABF228CEF76000F0948A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA87ABF528CEF76000F0948A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,12 +101,9 @@
 		AA87ABE528CEF75D00F0948A /* xbike-demo */ = {
 			isa = PBXGroup;
 			children = (
-				AA87ABE628CEF75D00F0948A /* AppDelegate.swift */,
-				AA87ABE828CEF75D00F0948A /* SceneDelegate.swift */,
-				AA87ABEA28CEF75D00F0948A /* ViewController.swift */,
-				AA87ABEC28CEF75D00F0948A /* Main.storyboard */,
+				AA87AC1D28CEFA9B00F0948A /* Components */,
+				AA87AC1928CEF9E300F0948A /* OnBoarding */,
 				AA87ABF228CEF76000F0948A /* Assets.xcassets */,
-				AA87ABF428CEF76000F0948A /* LaunchScreen.storyboard */,
 				AA87ABF728CEF76000F0948A /* Info.plist */,
 				AA87ABEF28CEF75D00F0948A /* xbike_demo.xcdatamodeld */,
 			);
@@ -128,6 +125,49 @@
 				AA87AC0C28CEF76000F0948A /* xbike_demoUITestsLaunchTests.swift */,
 			);
 			path = "xbike-demoUITests";
+			sourceTree = "<group>";
+		};
+		AA87AC1928CEF9E300F0948A /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				AA87AC1C28CEFA0400F0948A /* View */,
+				AA87AC1B28CEF9FA00F0948A /* ViewModel */,
+				AA87AC1A28CEF9F400F0948A /* Model */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		AA87AC1A28CEF9F400F0948A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA87AC1B28CEF9FA00F0948A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA87AC1C28CEFA0400F0948A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA87ABEC28CEF75D00F0948A /* OnBoarding.storyboard */,
+				AA87ABEA28CEF75D00F0948A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA87AC1D28CEFA9B00F0948A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA87ABE628CEF75D00F0948A /* AppDelegate.swift */,
+				AA87ABE828CEF75D00F0948A /* SceneDelegate.swift */,
+				AA87ABF428CEF76000F0948A /* LaunchScreen.storyboard */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +276,7 @@
 			files = (
 				AA87ABF628CEF76000F0948A /* LaunchScreen.storyboard in Resources */,
 				AA87ABF328CEF76000F0948A /* Assets.xcassets in Resources */,
-				AA87ABEE28CEF75D00F0948A /* Main.storyboard in Resources */,
+				AA87ABEE28CEF75D00F0948A /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,12 +341,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA87ABEC28CEF75D00F0948A /* Main.storyboard */ = {
+		AA87ABEC28CEF75D00F0948A /* OnBoarding.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AA87ABED28CEF75D00F0948A /* Base */,
 			);
-			name = Main.storyboard;
+			name = OnBoarding.storyboard;
 			sourceTree = "<group>";
 		};
 		AA87ABF428CEF76000F0948A /* LaunchScreen.storyboard */ = {
@@ -446,7 +486,7 @@
 				INFOPLIST_FILE = "xbike-demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = OnBoarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +514,7 @@
 				INFOPLIST_FILE = "xbike-demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = OnBoarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
